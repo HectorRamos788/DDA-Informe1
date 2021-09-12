@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ControlWeb.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head runat="server">
+        <title><%: Page.Title %> - CONTROL WEB</title>
+</head>
+<body>
+    <form runat="server">
+        <div>
+            <h1>Bienvenido a ASP.NET</h1>
+            <asp:Label Borderstyle="dashed" Text="Test de borde" id="Ctrl" runat = "server"/>
+            <asp:CheckBoxList id="chklst" runat = "server"/>
+            <asp:Button id="cmdOK" Text="Ok" OnClick="cmdOk_Click" runat = "server"/>
+            <br/><br/>
+            <asp:Label id="lblResult" runat = "server"/>
+        </div>
+    </form>
+</body>
+</html>
